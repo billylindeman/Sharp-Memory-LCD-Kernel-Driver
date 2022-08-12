@@ -27,9 +27,9 @@ char vcomByte    = 0b01000000;
 char clearByte   = 0b00100000;
 char paddingByte = 0b00000000;
 
-char DISP       = 24;
-char SCS        = 23;
-char VCOM       = 25;
+int DISP       = 502;
+int SCS        = 449;
+int VCOM       = 448;
 
 int lcdWidth = LCDWIDTH;
 int lcdHeight = 240;
