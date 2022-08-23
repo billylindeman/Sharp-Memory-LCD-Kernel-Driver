@@ -1,0 +1,19 @@
+diff --git a/src/fbdev.c b/src/fbdev.c
+index e4f66a2..645c406 100644
+--- a/src/fbdev.c
++++ b/src/fbdev.c
+@@ -795,10 +795,10 @@ FBDevScreenInit(SCREEN_INIT_ARGS_DECL)
+ 
+        fbdevHWSave(pScrn);
+ 
+-       if (!fbdevHWModeInit(pScrn, pScrn->currentMode)) {
+-               xf86DrvMsg(pScrn->scrnIndex,X_ERROR,"mode initialization failed\n");
+-               return FALSE;
+-       }
++       //if (!fbdevHWModeInit(pScrn, pScrn->currentMode)) {
++       //      xf86DrvMsg(pScrn->scrnIndex,X_ERROR,"mode initialization failed\n");
++       //      return FALSE;
++       //}
+        fbdevHWSaveScreen(pScreen, SCREEN_SAVER_ON);
+        fbdevHWAdjustFrame(ADJUST_FRAME_ARGS(pScrn, 0, 0));
+
